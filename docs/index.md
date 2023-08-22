@@ -1,5 +1,6 @@
-# Title: Pickling and Exception Handling
-
+# Pickling and Exception Handling
+**Developer:** *Provancha*  
+**Date:** *August 22, 2023*
 ## Introduction
 This document will go over the steps needed to write a Python Script that provides a choice for the user to add to a binary file or exit the program.  This script builds upon prior lessons, introducing Pickling and Exception handling.  
 ## Sections of the Script
@@ -7,6 +8,7 @@ I simplified sections of the script from Assignment06 that involved a user makin
 ## Pickling
 Pickling means to serialize an object or to be able to save complex data in a single line of code that has all the necessary information which can then be unpickled and used in other Python scripts.  
 First, I imported the pickle module which is include with Python (Figure 1).  
+
 ### Function: save data to a file
 Next, I created a function to save to a binary file.  The function “open()” is used with the name of the file and mode “ab”.  The mode “ab” means to append to a binary file, and if the file does not exist, it will be created.
 The function “pickle.dump()” is then used to write a data list to the binary file.  And then the file is closed, “close()” and saved.  
