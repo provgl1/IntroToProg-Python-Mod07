@@ -10,7 +10,7 @@ Pickling means to serialize an object or to be able to save complex data in a si
 
 First, I imported the pickle module which is include with Python (Figure 1).  
 
-![Figure1](https://github.com/provgl1/IntroToProg-Python-Mod07/blob/main/pictures/Figure1.png "Figure1")    
+![Figure1](https://github.com/provgl1/IntroToProg-Python-Mod07/blob/main/docs/Figure1.png?raw=true "Figure1")  
 *Figure1: import pickle*
 ### Function: save data to a file
 Next, I created a function to save to a binary file.  The function “open()” is used with the name of the file and mode “ab”.  The mode “ab” means to append to a binary file, and if the file does not exist, it will be created.
