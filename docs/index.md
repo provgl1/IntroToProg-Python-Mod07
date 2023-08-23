@@ -11,12 +11,18 @@ Pickling means to serialize an object or to be able to save complex data in a si
 First, I imported the pickle module which is include with Python (Figure 1).  
 
 ![Figure1](https://github.com/provgl1/IntroToProg-Python-Mod07/blob/main/pictures/Figure1.png?raw=true "Figure1")  
-*Figure1: import pickle*
+*Figure 1: import pickle*
 ### Function: save data to a file
 Next, I created a function to save to a binary file.  The function “open()” is used with the name of the file and mode “ab”.  The mode “ab” means to append to a binary file, and if the file does not exist, it will be created.
-The function “pickle.dump()” is then used to write a data list to the binary file.  And then the file is closed, “close()” and saved.  
+
+The function “pickle.dump()” is then used to write a data list to the binary file.  And then the file is closed, “close()” and saved (Figure2).
+
+![Figure2](https://github.com/provgl1/IntroToProg-Python-Mod07/blob/main/pictures/Figure2.png?raw=true "Figure2")  
+*Figure 2: opening file and saving as binary*
 ### Function: read data to a file
 Then, I created a function to read data from a binary file.  The function “open()” is once again used, but this time with the mode “rb” which means to read from a binary file.  The function “pickle.load()” is then used to add one entry to a list.  And then the file is closed, “close()” (Figure 3).
+
+*Figure 3: reading data from a binary file and saving to a list*
 ## Exception Handling
 Scripts don’t always run smoothly and various errors can occur.  To make a script more robust, exception handling can be added.   
 One method is the Try/Except.  For my script, I decided to use this method to accomplish something a bit different, not to capture a possible error, but to gain the ability to add more then 1 entry in my list when reading (unpickling) my binary file.  I decided to use a While loop and “try” reading the lines from the binary file until no further lines exist.  Once that occurred, the script would jump to the “except” and the loop would end (Figure 4).  
